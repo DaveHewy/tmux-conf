@@ -1,0 +1,18 @@
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	name = DaveHewy
+	email = dave@bytewire.co.uk
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[difftool "meld"]
+  	trustExitCode = true
+[core]
+	autocrlf = input
